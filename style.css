@@ -1,0 +1,1143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+:root {
+  --primary: #FF8400;
+  --gary: #5E5E5E;
+  --bg-gray: #F9F4FC;
+  --gradient: linear-gradient(91.91deg, #FFCC00 0.54%, #DB8708 120.76%);
+  --gradient-lite: linear-gradient(91.91deg, #FFCC0020 0.54%, #DB870820 120.76%);
+}
+
+body {
+  font-family: "Poppins", serif;
+  color: #000000;
+}
+
+.bubupod-btn {
+  background: var(--gradient);
+  border: none;
+  padding: 15px 50px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.bubupod-btn-gray {
+  background: transparent !important;
+  border-color: var(--gary) !important;
+  color: var(--gary) !important;
+  padding: 15px 50px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.bubupod-h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.bubupod-h2 span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bubupod-p {
+  color: var(--gary);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bubupod-input {
+  padding: 20px;
+}
+
+button.bubupod-input {
+  color: var(--bs-body-color) !important;
+  background: transparent !important;
+  border: 1px solid var(--bs-border-color) !important;
+}
+
+header.bubupod-header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+header.bubupod-header .bubupod-logo {
+  width: 214px;
+}
+header.bubupod-header .bubupod-login-group {
+  width: 214px;
+}
+header.bubupod-header nav ul {
+  list-style: none;
+}
+header.bubupod-header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header.bubupod-header .bubupod-cart {
+  position: relative;
+}
+header.bubupod-header .bubupod-cart img {
+  width: 35px;
+}
+header.bubupod-header .bubupod-cart .bubupod-badge {
+  border-radius: 100%;
+  background-color: var(--primary);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  font-size: 12px;
+}
+header.bubupod-header.home-header {
+  padding: 50px 0;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+header.bubupod-header.home-header .bubupod-menu {
+  padding: 0px 50px;
+}
+header.bubupod-header.bubupod-fixed {
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  padding: 20px 0;
+}
+
+.bubupod-banner-section {
+  background-color: #ffffff;
+  padding: 30px 0;
+}
+.bubupod-banner-section img {
+  border-radius: 60px;
+}
+.bubupod-banner-section .bubupod-content {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+.bubupod-banner-section .bubupod-content h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 72px;
+}
+.bubupod-banner-section .bubupod-content h1 span {
+  font-family: "Pacifico", cursive;
+  font-size: 129px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bubupod-banner-section .bubupod-content p {
+  margin: 25px 0 50px;
+  max-width: 510px;
+  width: 100%;
+}
+.bubupod-banner-section .bubupod-overlay {
+  position: absolute;
+  width: calc(100% - 1.5rem);
+  height: 20%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5019607843), transparent);
+  z-index: 2;
+  top: 0;
+  border-radius: 60px 60px 0 0;
+}
+
+section.bubupod-premium-section {
+  padding: 50px 0;
+  background: #ffffff;
+}
+section.bubupod-premium-section .bubupod-premium-left p {
+  margin: 50px 0;
+}
+section.bubupod-premium-section .bubupod-premium-left ul {
+  -moz-column-count: 2;
+       column-count: 2;
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+section.bubupod-premium-section .bubupod-premium-left ul li {
+  position: relative;
+  padding-left: 25px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+section.bubupod-premium-section .bubupod-premium-left ul li::after {
+  content: "";
+  position: absolute;
+  background: url('data:image/svg+xml,<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_388_467)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.0827 0.485352C5.86679 0.485352 0 6.35214 0 13.5681C0 20.784 5.86679 26.6508 13.0827 26.6508C20.2987 26.6508 26.1655 20.784 26.1655 13.5681C26.1655 6.35214 20.2987 0.485352 13.0827 0.485352Z" fill="url(%23paint0_linear_388_467)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M19.4096 9.15773C19.7265 9.47458 19.7265 9.99584 19.4096 10.3127L11.744 17.9783C11.5856 18.1368 11.376 18.2185 11.1665 18.2185C10.957 18.2185 10.7474 18.1368 10.589 17.9783L6.75619 14.1455C6.43934 13.8287 6.43934 13.3074 6.75619 12.9906C7.07304 12.6737 7.5943 12.6737 7.91115 12.9906L11.1665 16.2459L18.2547 9.15773C18.5715 8.83577 19.0928 8.83577 19.4096 9.15773Z" fill="white"/></g><defs><linearGradient id="paint0_linear_388_467" x1="0" y1="4.84626" x2="32.468" y2="5.92654" gradientUnits="userSpaceOnUse"><stop stop-color="%23FFCC00"/><stop offset="1" stop-color="%23DB8708"/></linearGradient><clipPath id="clip0_388_467"><rect width="26.1655" height="26.1655" fill="white" transform="translate(0 0.485352)"/></clipPath></defs></svg>');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: calc(50% - 9px);
+}
+section.bubupod-premium-section .bubupod-premium-left ul li:nth-of-type(odd) {
+  margin-bottom: 10px;
+}
+section.bubupod-premium-section .bubupod-slides {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+section.bubupod-premium-section .bubupod-slides .bubupod-slide {
+  border-bottom: 1px solid var(--gary);
+}
+section.bubupod-premium-section .bubupod-slides .bubupod-slide h3 {
+  font-size: 48px;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.2509803922));
+}
+
+section.bubupod-steps-section {
+  padding: 40px 0;
+  background: #ffffff;
+}
+section.bubupod-steps-section .bubupod-outer {
+  padding: 70px 100px;
+  background: var(--bg-gray);
+  border-radius: 50px;
+  position: relative;
+}
+section.bubupod-steps-section .bubupod-outer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(./images/bg-img.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+section.bubupod-steps-section p {
+  margin-bottom: 25px;
+  text-align: center;
+}
+section.bubupod-steps-section .bubupod-step-card {
+  background: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+section.bubupod-steps-section .bubupod-step-card h3 {
+  background: var(--gradient);
+  font-size: 32px;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+}
+
+section.bubupod-special-section {
+  padding: 50px 0;
+}
+section.bubupod-special-section .bubupod-img {
+  height: 450px;
+  overflow: hidden;
+}
+section.bubupod-special-section .border-bottom {
+  border-color: var(--gary) !important;
+}
+section.bubupod-special-section .bubupod-special-swiper {
+  padding: 50px 0;
+}
+section.bubupod-special-section .bubupod-special-swiper .swiper-slide {
+  text-align: center;
+  border-left: 0.5px solid var(--gary);
+  padding-left: 20px;
+}
+section.bubupod-special-section .bubupod-special-swiper .swiper-slide.swiper-slide-active {
+  border-left: none;
+}
+section.bubupod-special-section .bubupod-special-swiper .swiper-slide img {
+  height: 70px;
+  width: auto;
+  margin-bottom: 20px;
+}
+section.bubupod-special-section .bubupod-special-swiper .swiper-slide h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+section.bubupod-special-section .bubupod-special-swiper .swiper-slide p {
+  font-size: 16px;
+}
+
+section.bubupod-twin-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+section.bubupod-twin-section .bubupod-twin-swiper {
+  padding-bottom: 80px;
+}
+section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide {
+  background-color: var(--bg-gray);
+  padding: 70px 40px;
+  border-radius: 20px 20px 0 0;
+}
+section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide h3, section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide span {
+  color: var(--gary);
+}
+section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide p {
+  font-weight: 500;
+}
+section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide img {
+  border-radius: 20px 20px 0 0;
+}
+section.bubupod-twin-section .bubupod-twin-swiper .swiper-button-prev {
+  width: 50px;
+  height: unset;
+  bottom: 0;
+  top: unset;
+  left: calc(50% - 70px);
+}
+section.bubupod-twin-section .bubupod-twin-swiper .swiper-button-prev::after {
+  content: "";
+  background: url('data:image/svg+xml,<svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_2_126" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="73" height="73"><path d="M36.5 71C17.4456 71 2 55.5544 2 36.5C2 17.4457 17.4456 2 36.5 2C55.5543 2 71 17.4457 71 36.5C71 55.5544 55.5543 71 36.5 71Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/><path d="M41.675 52.025L26.15 36.5L41.675 20.975" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></mask><g mask="url(%23mask0_2_126)"><path d="M77.8999 -4.90002H-4.9001V77.9H77.8999V-4.90002Z" fill="url(%23paint0_linear_2_126)"/></g><defs><linearGradient id="paint0_linear_2_126" x1="77.8999" y1="8.89998" x2="-24.8444" y2="12.3185" gradientUnits="userSpaceOnUse"><stop stop-color="%23FFCC00"/><stop offset="1" stop-color="%23DB8708"/></linearGradient></defs></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+section.bubupod-twin-section .bubupod-twin-swiper .swiper-button-next {
+  width: 50px;
+  height: unset;
+  bottom: 0;
+  top: unset;
+  right: calc(50% - 70px);
+}
+section.bubupod-twin-section .bubupod-twin-swiper .swiper-button-next::after {
+  content: "";
+  background: url('data:image/svg+xml,<svg width="74" height="73" viewBox="0 0 74 73" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_2_120" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="74" height="73"><path d="M36.7 71C55.7543 71 71.2 55.5544 71.2 36.5C71.2 17.4457 55.7543 2 36.7 2C17.6456 2 2.19995 17.4457 2.19995 36.5C2.19995 55.5544 17.6456 71 36.7 71Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/><path d="M31.5249 52.025L47.0499 36.5L31.5249 20.975" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></mask><g mask="url(%23mask0_2_120)"><path d="M-4.69995 -4.90002H78.1001V77.9H-4.69995V-4.90002Z" fill="url(%23paint0_linear_2_120)"/></g><defs><linearGradient id="paint0_linear_2_120" x1="-4.69995" y1="8.89998" x2="98.0444" y2="12.3185" gradientUnits="userSpaceOnUse"><stop stop-color="%23FFCC00"/><stop offset="1" stop-color="%23DB8708"/></linearGradient></defs></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+section.bubupod-comparison-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+section.bubupod-comparison-section .bubupod-checked {
+  width: 30px;
+  height: auto;
+}
+section.bubupod-comparison-section .bubupod-cross {
+  width: 30px;
+  height: auto;
+}
+section.bubupod-comparison-section .bubupod-check {
+  width: 30px;
+  height: auto;
+}
+
+section.bubupod-contact-us-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+section.bubupod-contact-us-section h2 {
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--gary);
+}
+section.bubupod-contact-us-section p {
+  font-weight: 400;
+}
+
+footer.bubupod-footer {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+footer.bubupod-footer .bubupod-footer-outer {
+  background-color: var(--bg-gray);
+  padding: 40px;
+  border-radius: 30px;
+}
+footer.bubupod-footer .bubupod-top-footer {
+  padding-bottom: 20px;
+}
+footer.bubupod-footer .bubupod-top-footer.border-bottom {
+  border-color: var(--gary) !important;
+}
+footer.bubupod-footer .bubupod-top-footer a {
+  color: #262626;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+footer.bubupod-footer .bubupod-top-footer a img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer.bubupod-footer .bubupod-middle-footer h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+footer.bubupod-footer .bubupod-middle-footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer.bubupod-footer .bubupod-middle-footer ul li a {
+  color: #737373;
+  text-decoration: none;
+}
+footer.bubupod-footer .bubupod-middle-footer .bubupod-social p {
+  font-weight: 500;
+}
+footer.bubupod-footer .bubupod-middle-footer .bubupod-social img {
+  width: 40px;
+  height: auto;
+}
+footer.bubupod-footer .bubupod-bottom-footer p {
+  color: var(--gary);
+  font-size: 14px;
+}
+footer.bubupod-footer .bubupod-bottom-footer a {
+  color: var(--gary);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+section.bubupod-breadcrums-section {
+  background-color: #F7F7F7;
+  padding: 13px 0;
+}
+section.bubupod-breadcrums-section a, section.bubupod-breadcrums-section span {
+  color: #191919;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bubupod-product-section {
+  padding: 60px 0;
+}
+.bubupod-product-section .bubupod-product-details {
+  position: relative;
+  padding: 50px 0;
+}
+.bubupod-product-section .bubupod-product-details .bubupod-offer {
+  position: absolute;
+  right: 0px;
+  top: -20px;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.bubupod-product-section .bubupod-product-details .bubupod-offer span {
+  position: absolute;
+  font-size: 10px;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  padding: 3px 5px;
+  top: -12px;
+  background: #ffffff;
+}
+.bubupod-product-section .bubupod-product-details h1 {
+  font-size: 40px;
+}
+.bubupod-product-section .bubupod-product-details h1 span {
+  font-weight: 700;
+}
+.bubupod-product-section .bubupod-product-details .bubupod-price {
+  font-size: 42px;
+  font-weight: 600;
+}
+.bubupod-product-section .bubupod-product-details .bubupod-price span {
+  text-decoration: line-through;
+  color: #BFBFBF;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.bubupod-product-section .bubupod-product-details h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.bubupod-product-section .bubupod-product-details .bubupod-box {
+  padding: 10px 20px;
+  text-align: center;
+  background: var(--gradient-lite);
+  border-radius: 12px;
+}
+.bubupod-product-section .bubupod-product-details .bubupod-box img {
+  width: 40px;
+}
+.bubupod-product-section .bubupod-product-details .bubupod-box p {
+  color: #424242;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.bubupod-product-section .bubupod-product-details .bubupod-btn-gray svg {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+}
+.bubupod-product-section .swiper-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.bubupod-product-section .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  aspect-ratio: 1;
+}
+.bubupod-product-section .swiper-thumb {
+  height: 100px;
+}
+.bubupod-product-section .swiper-thumb .swiper-slide {
+  background: #ccc;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.bubupod-product-section .swiper-thumb .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.bubupod-top {
+  background-color: var(--bg-gray);
+  padding: 10px;
+}
+
+section.bubupod-product-details-section .bubupod-bottom {
+  padding: 50px;
+}
+section.bubupod-product-details-section .bubupod-bottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  border-radius: 20px;
+  padding: 50px;
+}
+section.bubupod-product-details-section .bubupod-bottom ul li {
+  color: var(--gary);
+  font-weight: 500;
+}
+section.bubupod-product-details-section .bubupod-bottom ul li::marker {
+  color: #000000;
+}
+section.bubupod-product-details-section .bubupod-bottom ul li span {
+  color: #000000;
+  font-size: 18px;
+}
+
+section.bubupod-instructions-section {
+  background: var(--bg-gray);
+  padding: 10px 0;
+}
+section.bubupod-instructions-section .bubuprod-slide {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  border-radius: 16px;
+  padding: 20px 30px;
+  height: 100%;
+}
+section.bubupod-instructions-section .bubuprod-slide h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+section.bubupod-instructions-section .bubuprod-slide h3 span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.bubupod-instructions-section .bubuprod-slide p {
+  color: #323232;
+  padding-left: 26px;
+}
+
+section.bubupod-reviews-section .bubupod-top-top {
+  padding: 50px;
+}
+section.bubupod-reviews-section .bubupod-bottom {
+  padding: 50px 0;
+}
+section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card svg {
+  width: 35px;
+  height: auto;
+}
+section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-slide {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+  margin: 10px;
+  padding: 20px;
+  width: 370px;
+}
+section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-slide .review-profile img {
+  width: 70px;
+}
+section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-slide .review-profile h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-slide .review-star span {
+  color: rgba(0, 0, 0, 0.2509803922);
+  font-size: 14px;
+}
+section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-slide .review-star svg {
+  width: 25px;
+  height: auto;
+}
+
+section.product-slider-section .bubupod-bottom {
+  padding: 50px 0;
+}
+section.product-slider-section .bubupod-bottom .swiper-slide {
+  text-align: center;
+}
+section.product-slider-section .bubupod-bottom .swiper-slide img {
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.product-slider-section .bubupod-bottom .swiper-slide h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+section.product-slider-section .bubupod-bottom .swiper-slide p {
+  font-size: 18px;
+  font-weight: 500;
+}
+section.product-slider-section .bubupod-bottom .swiper-slide p span {
+  color: #898989;
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+
+section.bubupod-about-section {
+  padding: 50px 0;
+}
+section.bubupod-about-section .bubupod-text {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  max-width: 800px;
+}
+section.bubupod-about-section .bubupod-text p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+section.bubupod-mission-section {
+  padding: 50px 0;
+}
+section.bubupod-mission-section img {
+  border-radius: 20px;
+}
+section.bubupod-mission-section .bubupod-text {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 45%;
+}
+
+section.bubupod-split-section h2 {
+  font-size: 32px;
+}
+section.bubupod-split-section p, section.bubupod-split-section ul {
+  font-weight: 500;
+  font-size: 16px;
+}
+section.bubupod-split-section .col-md-6:first-of-type {
+  border-right: 0.5px solid var(--primary);
+}
+
+section.bubupod-matters-section {
+  padding: 50px 0;
+}
+
+section.bubupod-join-section p {
+  font-weight: 500;
+}
+section.bubupod-join-section p span {
+  color: #000000;
+}
+
+section.bubupod-contect-section {
+  padding: 50px;
+}
+section.bubupod-contect-section .bubupod-text {
+  position: absolute;
+  top: 50px;
+  width: calc(100% - 100px);
+  left: 50px;
+  right: 50px;
+}
+section.bubupod-contect-section .bubupod-text p {
+  font-weight: 500;
+}
+section.bubupod-contect-section .bubupod-touch {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+section.bubupod-contact-form-section {
+  padding: 50px;
+}
+
+section.bubupod-faq-section {
+  padding: 50px;
+  background-color: var(--bg-gray);
+}
+section.bubupod-faq-section .bubupod-accordion .accordion-item {
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0px 6px 16px rgba(74, 58, 255, 0.19);
+  margin-bottom: 20px;
+}
+section.bubupod-faq-section .bubupod-accordion .accordion-item:has(.show, .collapsing) {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid var(--primary);
+}
+section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header {
+  background: transparent;
+}
+section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button {
+  background: transparent;
+  box-shadow: none;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  color: #000000 !important;
+}
+section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button::after {
+  background: url('data:image/svg+xml,<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25.3309" cy="25.3309" r="25.3309" fill="%23ACACAC"/><path d="M17.0742 22.2212L25.3308 30.4405L33.5874 22.2212" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  width: 40px;
+  height: 40px;
+  content: "";
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button:not(.collapsed)::after {
+  background: url('data:image/svg+xml,<svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25.4871" cy="25.9939" r="25.3309" fill="url(%23paint0_linear_0_1497)"/><path d="M17.2305 22.8843L25.4871 31.1035L33.7436 22.8843" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_0_1497" x1="0.15625" y1="9.10671" x2="63.021" y2="11.1984" gradientUnits="userSpaceOnUse"><stop stop-color="%23FFCC00"/><stop offset="1" stop-color="%23DB8708"/></linearGradient></defs></svg>');
+  width: 40px;
+  height: 40px;
+  content: "";
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  transform: none;
+}
+section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.bubupod-return-section {
+  padding: 50px 0;
+}
+section.bubupod-return-section h2 {
+  font-weight: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+section.bubupod-return-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  color: var(--gary);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section.bubupod-return-section ul span {
+  font-weight: 500;
+  color: #000;
+}
+
+section.bubupod-thanks-section {
+  padding: 50px 0;
+  background-color: var(--bg-gray);
+}
+section.bubupod-thanks-section p {
+  max-width: 500px;
+  margin: auto;
+  font-weight: 500;
+}
+section.bubupod-thanks-section img {
+  width: 300px;
+}
+
+section.bubupod-grid-section {
+  padding: 0 0 50px;
+}
+section.bubupod-grid-section .bubupod-privacy-card {
+  background: var(--bg-gray);
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+}
+section.bubupod-grid-section .bubupod-privacy-card h2 {
+  font-size: 24px;
+}
+
+section.bubupod-choose-section {
+  padding: 50px 0;
+}
+section.bubupod-choose-section p {
+  font-weight: 500;
+  max-width: 690px;
+  margin: auto;
+}
+section.bubupod-choose-section .bubupod-choose-slide {
+  text-align: center;
+}
+section.bubupod-choose-section .bubupod-choose-slide img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+section.bubupod-choose-section .bubupod-choose-slide .bubupod-text {
+  margin-top: 50px;
+  background-color: var(--bg-gray);
+  position: relative;
+  border-radius: 5px;
+}
+section.bubupod-choose-section .bubupod-choose-slide .bubupod-text h3 {
+  padding: 10px;
+  background: var(--gradient);
+  color: #ffffff;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 0;
+}
+section.bubupod-choose-section .bubupod-choose-slide .bubupod-text p {
+  padding: 10px;
+  color: var(--gary);
+}
+section.bubupod-choose-section .bubupod-choose-slide .bubupod-text::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  border-radius: 10px;
+  height: 80px;
+  top: -80px;
+  left: calc(50% - 2.5px);
+  background-color: rgba(0, 0, 0, 0.2509803922);
+}
+section.bubupod-choose-section .bubupod-choose-slide .bubupod-text::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  border-radius: 10px;
+  height: 10px;
+  top: -100px;
+  left: calc(50% - 5px);
+  background-color: rgba(0, 0, 0, 0.2509803922);
+}
+
+section.bubupod-love-section .bubupod-top {
+  padding: 50px 0;
+  background-color: var(--bg-gray);
+}
+section.bubupod-love-section h3 {
+  font-size: 24px;
+}
+section.bubupod-love-section p {
+  font-weight: 500;
+  max-width: 770px;
+  margin: auto;
+}
+
+section.bubupod-how-to-use-section {
+  padding: 50px 0;
+}
+
+section.bubupod-cart-detail-section {
+  padding: 50px 0;
+}
+section.bubupod-cart-detail-section img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.bubupod-cart-detail-section .bubupod-text {
+  width: calc(100% - 200px);
+}
+section.bubupod-cart-detail-section h2 {
+  font-size: 24px;
+}
+section.bubupod-cart-detail-section h2 span {
+  font-weight: 700;
+}
+section.bubupod-cart-detail-section .bubupod-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+section.bubupod-cart-detail-section .bubupod-price span {
+  text-decoration: line-through;
+  color: #BFBFBF;
+  font-weight: 500;
+  padding-left: 5px;
+}
+section.bubupod-cart-detail-section h3 {
+  font-size: 10px;
+}
+section.bubupod-cart-detail-section .table td {
+  vertical-align: middle;
+}
+section.bubupod-cart-detail-section .table input[type=number] {
+  box-shadow: none;
+  font-weight: 18px;
+  font-weight: 700;
+  -moz-appearance: textfield;
+}
+section.bubupod-cart-detail-section .table input[type=number]::-webkit-inner-spin-button, section.bubupod-cart-detail-section .table input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+section.bubupod-cart-detail-section .bubupod-coupon-box .offer-icon {
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  left: 10px;
+}
+section.bubupod-cart-detail-section .bubupod-coupon-box input {
+  padding: 15px 15px 15px 40px;
+  box-shadow: none;
+}
+section.bubupod-cart-detail-section .bubupod-payment-card {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFE57F;
+}
+
+@media (max-width: 1399.98px) {
+  header.bubupod-header a {
+    font-size: 14px;
+  }
+  .bubupod-banner-section .bubupod-content h1 {
+    font-size: 45px;
+  }
+  .bubupod-banner-section .bubupod-content h1 span {
+    font-size: 80px;
+  }
+  .bubupod-product-section .bubupod-product-details .bubupod-box p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .bubupod-banner-section .bubupod-content {
+    bottom: 50px;
+  }
+  section.bubupod-steps-section .bubupod-outer {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  .bubupod-product-section .bubupod-product-details h1 {
+    font-size: 30px;
+  }
+  .bubupod-product-section .bubupod-product-details .bubupod-price {
+    font-size: 24px;
+  }
+  .bubupod-product-section .bubupod-product-details .star-ratting svg {
+    width: 30px;
+  }
+  .bubupod-btn-gray {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  header.bubupod-header nav {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    height: 100svh;
+    top: 0;
+    width: 200px;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    z-index: 10;
+    flex-direction: column;
+    align-items: start !important;
+  }
+  header.bubupod-header nav ul {
+    flex-direction: column;
+  }
+  header.bubupod-header nav a {
+    color: #000;
+  }
+  header.bubupod-header .bubupod-menu {
+    padding: 0px !important;
+  }
+  header.bubupod-header.nav-open nav {
+    transform: translateX(0px);
+  }
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    width: 29px;
+    cursor: pointer;
+    color: #000;
+  }
+  .menu-toggle:hover {
+    color: #000;
+  }
+  .menu-toggle-bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  .menu-toggle-bar.menu-toggle-bar--top {
+    margin-bottom: 6px;
+  }
+  .menu-toggle-bar.menu-toggle-bar--middle {
+    margin-bottom: 6px;
+  }
+  .nav-open .menu-toggle-bar.menu-toggle-bar--top {
+    transform: rotate(45deg) translate(5px, 9px);
+  }
+  .nav-open .menu-toggle-bar.menu-toggle-bar--middle {
+    opacity: 0;
+  }
+  .nav-open .menu-toggle-bar.menu-toggle-bar--bottom {
+    transform: rotate(-45deg) translate(5px, -8px);
+  }
+  .bubupod-banner-section .bubupod-content {
+    bottom: 20px;
+    left: 20px;
+  }
+  .bubupod-banner-section .bubupod-content p {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  .bubupod-banner-section img {
+    border-radius: 20px;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .bubupod-banner-section .bubupod-overlay {
+    border-radius: 20px 20px 0 0;
+  }
+  section.bubupod-premium-section .bubupod-premium-left ul {
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+@media (max-width: 767.98px) {
+  .bubupod-banner-section .bubupod-content p {
+    font-size: 14px;
+  }
+  .bubupod-banner-section .bubupod-content h1 {
+    font-size: 32px;
+  }
+  .bubupod-banner-section .bubupod-content h1 span {
+    font-size: 58px !important;
+  }
+  .bubupod-btn,
+  .bubupod-btn-gray {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  .bubupod-h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .bubupod-p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  section.bubupod-premium-section {
+    padding: 20px 0;
+  }
+  section.bubupod-premium-section .bubupod-premium-left p {
+    margin: 20px 0;
+  }
+  section.bubupod-premium-section .bubupod-premium-left ul li {
+    font-size: 14px;
+  }
+  section.bubupod-premium-section .bubupod-slides .bubupod-slide h3 {
+    font-size: 28px;
+  }
+  .bubupod-product-section .bubupod-product-details h1 {
+    font-size: 18px;
+  }
+  .bubupod-product-section .bubupod-product-details h3 {
+    font-size: 14px;
+  }
+  .bubupod-product-section .bubupod-product-details {
+    padding: 40px 0 0;
+    margin-top: 50px;
+  }
+  .bubupod-product-section .bubupod-product-details .bubupod-offer {
+    font-size: 12px;
+  }
+  .bubupod-product-section .bubupod-product-details .bubupod-offer span {
+    font-size: 8px;
+  }
+}
+@media (max-width: 575.98px) {
+  /* Styles for extra small devices */
+}/*# sourceMappingURL=style.css.map */
