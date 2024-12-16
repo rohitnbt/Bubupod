@@ -7,10 +7,10 @@ const swiper = new Swiper('.bubupod-special-swiper', {
       disableOnInteraction: false,
     },
     breakpoints: {
-        0: { slidesPerView: 5 },
-        640: { slidesPerView: 2 },
+        0: { slidesPerView: 1 },
+        640: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
-        1024: { slidesPerView: 4 },
+        1024: { slidesPerView: 3 },
     },
   });
 
@@ -18,10 +18,10 @@ const swiper1 = new Swiper('.bubupod-twin-swiper', {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 20,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -71,7 +71,13 @@ const swiper1 = new Swiper('.bubupod-twin-swiper', {
   });
 
 $(document).ready(function(){
-  $('.menu-toggle').click(function(){
+  $('.menu-toggle').click(function(e){
+    e.stopPropagation();
     $('.bubupod-header').toggleClass('nav-open');
+    $('body').toggleClass('')
+  })
+
+  $('body, html').click(function(){
+    $('.bubupod-header').removeClass('nav-open');
   })
 })

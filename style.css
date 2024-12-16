@@ -51,6 +51,8 @@ body {
 
 .bubupod-input {
   padding: 20px;
+  box-shadow: none !important;
+  border-color: #dee2e6 !important;
 }
 
 button.bubupod-input {
@@ -294,6 +296,7 @@ section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide {
   background-color: var(--bg-gray);
   padding: 70px 40px;
   border-radius: 20px 20px 0 0;
+  gap: 10px;
 }
 section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide h3, section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide span {
   color: var(--gary);
@@ -303,6 +306,9 @@ section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide p
 }
 section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide img {
   border-radius: 20px 20px 0 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.bubupod-twin-section .bubupod-twin-swiper .swiper-button-prev {
   width: 50px;
@@ -491,6 +497,7 @@ section.bubupod-breadcrums-section a, section.bubupod-breadcrums-section span {
   text-align: center;
   background: var(--gradient-lite);
   border-radius: 12px;
+  height: 100%;
 }
 .bubupod-product-section .bubupod-product-details .bubupod-box img {
   width: 40px;
@@ -506,6 +513,9 @@ section.bubupod-breadcrums-section a, section.bubupod-breadcrums-section span {
   height: auto;
   margin-right: 10px;
 }
+.bubupod-product-section .swiper-thumb {
+  margin-top: 20px;
+}
 .bubupod-product-section .swiper-container {
   width: 100%;
   margin-bottom: 20px;
@@ -518,9 +528,13 @@ section.bubupod-breadcrums-section a, section.bubupod-breadcrums-section span {
   font-size: 18px;
   color: #fff;
   aspect-ratio: 1;
+  height: auto;
 }
-.bubupod-product-section .swiper-thumb {
-  height: 100px;
+.bubupod-product-section .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 10px;
 }
 .bubupod-product-section .swiper-thumb .swiper-slide {
   background: #ccc;
@@ -616,7 +630,7 @@ section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-s
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
   margin: 10px;
   padding: 20px;
-  width: 370px;
+  max-width: 370px;
 }
 section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-slide .review-profile img {
   width: 70px;
@@ -713,14 +727,20 @@ section.bubupod-contect-section {
   padding: 50px;
 }
 section.bubupod-contect-section .bubupod-text {
-  position: absolute;
-  top: 50px;
-  width: calc(100% - 100px);
-  left: 50px;
-  right: 50px;
+  padding: 20px;
 }
 section.bubupod-contect-section .bubupod-text p {
   font-weight: 500;
+}
+section.bubupod-contect-section > .container > img {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
 }
 section.bubupod-contect-section .bubupod-touch {
   background-color: #ffffff;
@@ -765,7 +785,7 @@ section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header
   content: "";
   background-size: contain;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button:not(.collapsed)::after {
   background: url('data:image/svg+xml,<svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25.4871" cy="25.9939" r="25.3309" fill="url(%23paint0_linear_0_1497)"/><path d="M17.2305 22.8843L25.4871 31.1035L33.7436 22.8843" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_0_1497" x1="0.15625" y1="9.10671" x2="63.021" y2="11.1984" gradientUnits="userSpaceOnUse"><stop stop-color="%23FFCC00"/><stop offset="1" stop-color="%23DB8708"/></linearGradient></defs></svg>');
@@ -774,7 +794,7 @@ section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header
   content: "";
   background-size: contain;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   transform: none;
 }
 section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button span {
@@ -941,7 +961,7 @@ section.bubupod-cart-detail-section .table td {
 }
 section.bubupod-cart-detail-section .table input[type=number] {
   box-shadow: none;
-  font-weight: 18px;
+  font-size: 18px;
   font-weight: 700;
   -moz-appearance: textfield;
 }
@@ -998,6 +1018,40 @@ section.bubupod-cart-detail-section .bubupod-payment-card {
   .bubupod-btn-gray {
     padding: 15px 20px;
   }
+  section.bubupod-about-section .bubupod-text {
+    top: 30px;
+    left: 30px;
+    max-width: 70%;
+  }
+  section.bubupod-about-section img {
+    border-radius: 20px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.bubupod-cart-detail-section img {
+    width: 150px;
+    height: 150px;
+  }
+  section.bubupod-cart-detail-section h2 {
+    font-size: 18px;
+  }
+  section.bubupod-cart-detail-section .bubupod-price {
+    font-size: 14px;
+  }
+  section.bubupod-cart-detail-section .table {
+    min-width: 600px;
+  }
+  section.bubupod-cart-detail-section .table .input-group {
+    width: 100%;
+  }
+  section.bubupod-cart-detail-section .table .input-group button {
+    padding: 2px 5px;
+  }
+  section.bubupod-cart-detail-section .table .input-group input[type=number] {
+    padding: 2px 5px;
+    font-size: 14px !important;
+  }
 }
 @media (max-width: 991.98px) {
   header.bubupod-header nav {
@@ -1020,20 +1074,34 @@ section.bubupod-cart-detail-section .bubupod-payment-card {
   header.bubupod-header nav a {
     color: #000;
   }
+  header.bubupod-header .bubupod-logo {
+    width: 120px;
+  }
+  header.bubupod-header .bubupod-cart img {
+    width: 25px;
+  }
+  header.bubupod-header .bubupod-cart .bubupod-badge {
+    width: 15px;
+    height: 15px;
+    right: -5px;
+    font-size: 10px;
+  }
   header.bubupod-header .bubupod-menu {
     padding: 0px !important;
   }
   header.bubupod-header.nav-open nav {
     transform: translateX(0px);
   }
+  header.bubupod-header.nav-open .menu-toggle {
+    transform: rotate(90deg);
+  }
   .menu-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 26px;
-    width: 29px;
+    transition: all 0.3s ease;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     color: #000;
+    margin-right: 5px;
   }
   .menu-toggle:hover {
     color: #000;
@@ -1041,7 +1109,7 @@ section.bubupod-cart-detail-section .bubupod-payment-card {
   .menu-toggle-bar {
     display: block;
     width: 100%;
-    height: 4px;
+    height: 3px;
     border-radius: 4px;
     background-color: #fff;
     transition: all 0.3s ease;
@@ -1053,13 +1121,13 @@ section.bubupod-cart-detail-section .bubupod-payment-card {
     margin-bottom: 6px;
   }
   .nav-open .menu-toggle-bar.menu-toggle-bar--top {
-    transform: rotate(45deg) translate(5px, 9px);
+    transform: rotate(45deg) translate(9.5px, 9.5px);
   }
   .nav-open .menu-toggle-bar.menu-toggle-bar--middle {
     opacity: 0;
   }
   .nav-open .menu-toggle-bar.menu-toggle-bar--bottom {
-    transform: rotate(-45deg) translate(5px, -8px);
+    transform: rotate(-45deg) translate(3px, -3px);
   }
   .bubupod-banner-section .bubupod-content {
     bottom: 20px;
@@ -1082,16 +1150,140 @@ section.bubupod-cart-detail-section .bubupod-payment-card {
     -moz-column-count: 1;
     column-count: 1;
   }
+  body:has(.nav-open) {
+    overflow: hidden;
+  }
+  section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide img {
+    border-radius: 10px;
+    margin-top: -40px;
+    width: 100%;
+    height: auto;
+  }
+  section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide {
+    border-radius: 10px 10px 0 0;
+    padding: 20px 20px 70px;
+  }
+  section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide p {
+    font-size: 14px;
+  }
+  section.bubupod-instructions-section .bubuprod-slide h3 {
+    font-size: 22px;
+  }
+  section.bubupod-instructions-section .bubuprod-slide p {
+    padding-left: 22px;
+    font-size: 14px;
+  }
+  section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card h3 {
+    font-size: 28px;
+  }
+  section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card {
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+  }
+  section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card svg {
+    width: 20px;
+  }
+  section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-slide .review-star svg {
+    width: 14px;
+  }
+  section.bubupod-reviews-section .bubupod-bottom .bubupod-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  section.bubupod-reviews-section p {
+    font-size: 14px;
+  }
+  .bubupod-product-section .bubupod-product-details {
+    padding: 40px 0 0;
+    margin-top: 50px;
+  }
+  .bubupod-product-section .bubupod-product-details .bubupod-offer {
+    font-size: 12px;
+  }
+  .bubupod-product-section .bubupod-product-details .bubupod-offer span {
+    font-size: 8px;
+  }
+  section.bubupod-product-details-section .bubupod-bottom ul {
+    gap: 10px;
+    padding: 30px;
+  }
+  section.bubupod-product-details-section .bubupod-bottom ul li,
+  section.bubupod-return-section ul li,
+  section.bubupod-grid-section .bubupod-privacy-card ul li,
+  section.bubupod-grid-section .bubupod-privacy-card p,
+  section.bubupod-breadcrums-section a, section.bubupod-breadcrums-section span {
+    font-size: 14px;
+  }
+  section.bubupod-product-details-section .bubupod-bottom ul li span,
+  section.bubupod-love-section h3 {
+    font-size: 16px;
+  }
+  section.bubupod-contect-section .bubupod-touch {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  section.bubupod-contect-section .bubupod-touch .border svg {
+    width: 10px;
+  }
+  section.bubupod-contect-section .bubupod-touch svg {
+    width: 20px;
+  }
+  section.bubupod-contect-section .bubupod-text p,
+  section.bubupod-contect-section .bubupod-text .d-flex span {
+    font-size: 10px;
+  }
+  section.bubupod-grid-section .bubupod-privacy-card h2 {
+    font-size: 18px;
+  }
+  section.bubupod-steps-section .bubupod-step-card {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  section.bubupod-steps-section .bubupod-step-card h3 {
+    font-size: 24px;
+  }
+  section.bubupod-steps-section .bubupod-outer::after {
+    width: 50%;
+    aspect-ratio: 1;
+    height: auto;
+  }
+  section.bubupod-twin-section,
+  section.bubupod-special-section,
+  section.bubupod-special-section .bubupod-special-swiper,
+  section.bubupod-comparison-section,
+  section.bubupod-steps-section,
+  section.bubupod-contact-us-section,
+  footer.bubupod-footer,
+  .bubupod-product-section,
+  section.bubupod-product-details-section .bubupod-bottom,
+  section.bubupod-reviews-section .bubupod-top-top,
+  section.bubupod-reviews-section .bubupod-bottom,
+  section.product-slider-section .bubupod-bottom,
+  section.bubupod-about-section,
+  section.bubupod-mission-section,
+  section.bubupod-contect-section,
+  section.bubupod-contact-form-section,
+  section.bubupod-faq-section,
+  section.bubupod-return-section,
+  section.bubupod-thanks-section,
+  section.bubupod-choose-section,
+  section.bubupod-grid-section,
+  section.bubupod-love-section .bubupod-top,
+  section.bubupod-cart-detail-section {
+    padding: 20px 0;
+  }
 }
 @media (max-width: 767.98px) {
   .bubupod-banner-section .bubupod-content p {
     font-size: 14px;
   }
   .bubupod-banner-section .bubupod-content h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .bubupod-banner-section .bubupod-content h1 span {
-    font-size: 58px !important;
+    font-size: 50px !important;
   }
   .bubupod-btn,
   .bubupod-btn-gray {
@@ -1105,9 +1297,9 @@ section.bubupod-cart-detail-section .bubupod-payment-card {
     text-transform: uppercase;
     font-weight: 500;
   }
-  .bubupod-p {
-    font-size: 14px;
-    font-weight: 500;
+  body .bubupod-p {
+    font-size: 14px !important;
+    font-weight: 500 !important;
   }
   section.bubupod-premium-section {
     padding: 20px 0;
@@ -1127,17 +1319,34 @@ section.bubupod-cart-detail-section .bubupod-payment-card {
   .bubupod-product-section .bubupod-product-details h3 {
     font-size: 14px;
   }
-  .bubupod-product-section .bubupod-product-details {
-    padding: 40px 0 0;
-    margin-top: 50px;
+  .bubupod-product-section .bubupod-product-details .flex-md-row img {
+    width: 25px;
   }
-  .bubupod-product-section .bubupod-product-details .bubupod-offer {
-    font-size: 12px;
+  section.bubupod-about-section .bubupod-text {
+    top: 30px;
+    left: 30px;
+    max-width: calc(100% - 60px);
   }
-  .bubupod-product-section .bubupod-product-details .bubupod-offer span {
-    font-size: 8px;
+  section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button {
+    font-size: 18px;
+  }
+  section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-body {
+    font-size: 14px;
+  }
+  section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button:not(.collapsed)::after {
+    width: 22px;
+    height: 22px;
+  }
+  section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button::after {
+    width: 22px;
+    height: 22px;
   }
 }
 @media (max-width: 575.98px) {
-  /* Styles for extra small devices */
+  section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button {
+    font-size: 14px;
+  }
+  section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-body {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

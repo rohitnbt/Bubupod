@@ -51,6 +51,8 @@ body {
 
 .bubupod-input {
     padding: 20px;
+    box-shadow: none !important;
+    border-color: #dee2e6 !important;
 }
 
 button.bubupod-input {
@@ -320,6 +322,7 @@ section.bubupod-twin-section {
                 background-color: var(--bg-gray);
                 padding: 70px 40px;
                 border-radius: 20px 20px 0 0;
+                gap: 10px;
 
                 h3,span{
                     color: var(--gary);
@@ -332,6 +335,8 @@ section.bubupod-twin-section {
 
             img {
                 border-radius: 20px 20px 0 0;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
@@ -549,6 +554,7 @@ section.bubupod-breadcrums-section{
             text-align: center;
             background: var(--gradient-lite);
             border-radius: 12px;
+            height: 100%;
 
             img {
                 width: 40px;
@@ -569,6 +575,10 @@ section.bubupod-breadcrums-section{
             }
         }
     }
+
+    .swiper-thumb {
+        margin-top: 20px;
+    }
     .swiper-container {
         width: 100%;
         margin-bottom: 20px;
@@ -580,10 +590,14 @@ section.bubupod-breadcrums-section{
         align-items: center;
         font-size: 18px;
         color: #fff;
-        aspect-ratio:1;
-      }
-      .swiper-thumb {
-        height: 100px;
+        aspect-ratio: 1;
+        height: auto;
+        
+        img {
+            object-fit: cover;
+            aspect-ratio: 1;
+            border-radius: 10px;
+        }
       }
       .swiper-thumb .swiper-slide {
         background: #ccc;
@@ -691,7 +705,7 @@ section.bubupod-reviews-section {
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06); 
                 margin: 10px;
                 padding: 20px;
-                width: 370px;
+                max-width: 370px;
                 .review-profile{
                     img {
                         width: 70px;
@@ -811,15 +825,21 @@ section.bubupod-join-section {
 section.bubupod-contect-section {
     padding: 50px;
     .bubupod-text {
-        position: absolute;
-        top: 50px;
-        width: calc(100% - 100px);
-        left: 50px;
-        right: 50px;
-
+        padding: 20px;
         p{
             font-weight: 500;
         }
+    }
+    
+
+    > .container > img{
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
     }
 
     .bubupod-touch{
@@ -868,7 +888,7 @@ section.bubupod-faq-section {
                         content: "";
                         background-size: contain;
                         background-position: center;
-                        background-repeat: repeat;
+                        background-repeat: no-repeat;
                     }
 
                     &:not(.collapsed)::after {
@@ -878,7 +898,7 @@ section.bubupod-faq-section {
                     content: "";
                     background-size: contain;
                     background-position: center;
-                    background-repeat: repeat;
+                    background-repeat: no-repeat;
                     transform: none;
                     }
                     span{
@@ -1075,7 +1095,7 @@ section.bubupod-cart-detail-section {
 
         input[type=number] {
             box-shadow: none;
-            font-weight: 18px;
+            font-size: 18px;
             font-weight: 700;
             -moz-appearance: textfield;
                 &::-webkit-inner-spin-button, 
@@ -1158,7 +1178,53 @@ section.bubupod-cart-detail-section {
 .bubupod-btn-gray {
     padding: 15px 20px;
 }
+
+section.bubupod-about-section {
+    .bubupod-text {
+        top: 30px;
+        left: 30px;
+        max-width: 70%;
+    }
+
+    img {
+    border-radius: 20px;
+    height: 400px;
+    object-fit: cover;
+}}
+
+section.bubupod-cart-detail-section {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .bubupod-price {
+        font-size: 14px;
+    }
+
+    .table {
+        min-width: 600px;
+        .input-group {
+            width: 100%;
+    
+            button {
+                padding: 2px 5px;
+            }
+    
+            input[type="number"] {
+                padding: 2px 5px;
+                font-size: 14px !important;
+            }
+        }
+    }
 }
+
+}
+
 
 
 @media (max-width: 991.98px) { 
@@ -1187,6 +1253,24 @@ section.bubupod-cart-detail-section {
                 }
             }
 
+            .bubupod-logo {
+                width: 120px;
+            }
+
+            .bubupod-cart {
+                img {
+                    width: 25px;
+                }
+
+                .bubupod-badge {
+                    width: 15px;
+                    height: 15px;
+                    right: -5px;
+                    font-size: 10px;
+                }
+    
+            }
+
             .bubupod-menu {
                 padding: 0px !important;
             }
@@ -1195,17 +1279,20 @@ section.bubupod-cart-detail-section {
                 nav {
                     transform: translateX(0px);
                 }
+
+                .menu-toggle {
+                    transform: rotate(90deg);
+                }
             }
         }
 
         .menu-toggle {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 26px;
-            width: 29px;
+            transition: all 0.3s ease;
+            height: 25px;
+            width: 25px;
             cursor: pointer;
             color: #000;
+            margin-right: 5px;
           
             &:hover {
               color: #000;
@@ -1215,7 +1302,7 @@ section.bubupod-cart-detail-section {
           .menu-toggle-bar {
             display: block;
             width: 100%;
-            height: 4px;
+            height: 3px;
             border-radius: 4px;
             background-color: #fff;
             transition: all 0.3s ease;
@@ -1233,13 +1320,13 @@ section.bubupod-cart-detail-section {
           
             .nav-open & {
               &.menu-toggle-bar--top {
-                transform: rotate(45deg) translate(5px, 9px);
+                transform: rotate(45deg) translate(9.5px, 9.5px);
             }
               &.menu-toggle-bar--middle {
                 opacity: 0;
               }
               &.menu-toggle-bar--bottom {
-                transform: rotate(-45deg) translate(5px, -8px);
+                transform: rotate(-45deg) translate(3px, -3px);
               }
             }
           }
@@ -1270,6 +1357,159 @@ section.bubupod-cart-detail-section {
             -moz-column-count: 1;
             column-count: 1;
         }
+
+        body:has(.nav-open) {
+            overflow: hidden;
+        }
+
+        section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide img {
+            border-radius: 10px;
+            margin-top: -40px;
+            width: 100%;
+            height: auto;
+        }
+
+        section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide {
+            border-radius: 10px 10px 0 0;
+            padding: 20px 20px 70px;
+        }
+
+        section.bubupod-twin-section .bubupod-twin-swiper .swiper-slide .bubupod-slide p {
+            font-size: 14px;
+        }
+
+        section.bubupod-instructions-section .bubuprod-slide h3 {
+            font-size: 22px;
+        }
+
+        section.bubupod-instructions-section .bubuprod-slide p {
+            padding-left: 22px;
+            font-size: 14px;
+        }
+
+        section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card h3 {
+            font-size: 28px;
+        }
+
+        section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card {
+            padding: 20px;
+            gap: 20px;
+            border-radius: 20px;
+        }
+
+        section.bubupod-reviews-section .bubupod-bottom .bubupod-rating-card svg{
+            width: 20px;
+        }
+
+        section.bubupod-reviews-section .bubupod-bottom .bubupod-review-swiper .swiper-slide .review-star svg {
+            width: 14px;
+        }
+
+        section.bubupod-reviews-section .bubupod-bottom  .bubupod-btn {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        section.bubupod-reviews-section {
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .bubupod-product-section .bubupod-product-details {
+            padding: 40px 0 0;
+            margin-top: 50px;
+    
+            .bubupod-offer {
+                font-size: 12px;
+    
+                span {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        section.bubupod-product-details-section .bubupod-bottom ul {
+            gap: 10px;
+            padding: 30px;
+        }
+
+        section.bubupod-product-details-section .bubupod-bottom ul li,
+        section.bubupod-return-section ul li,
+        section.bubupod-grid-section .bubupod-privacy-card ul li,
+        section.bubupod-grid-section .bubupod-privacy-card p,
+        section.bubupod-breadcrums-section a, section.bubupod-breadcrums-section span {
+            font-size: 14px;
+        }
+
+        section.bubupod-product-details-section .bubupod-bottom ul li span,
+        section.bubupod-love-section h3 {
+            font-size: 16px;
+        }
+
+        section.bubupod-contect-section .bubupod-touch {
+            padding: 20px;
+            border-radius: 10px;
+
+            .border svg {
+                width: 10px;
+            }
+
+            svg{
+                width: 20px;
+            }
+        }
+
+        section.bubupod-contect-section .bubupod-text p,
+        section.bubupod-contect-section .bubupod-text .d-flex span {
+            font-size: 10px;
+        }
+
+        section.bubupod-grid-section .bubupod-privacy-card h2 {
+            font-size: 18px;
+        }
+
+        section.bubupod-steps-section .bubupod-step-card {
+            position: relative;
+            z-index: 2;
+            border-radius: 10px;
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+
+        section.bubupod-steps-section .bubupod-outer::after {
+            width: 50%;
+            aspect-ratio: 1;
+            height: auto;
+        }
+
+        section.bubupod-twin-section,
+        section.bubupod-special-section,
+        section.bubupod-special-section .bubupod-special-swiper,
+        section.bubupod-comparison-section,
+        section.bubupod-steps-section,
+        section.bubupod-contact-us-section,
+        footer.bubupod-footer,
+        .bubupod-product-section,
+        section.bubupod-product-details-section .bubupod-bottom,
+        section.bubupod-reviews-section .bubupod-top-top,
+        section.bubupod-reviews-section .bubupod-bottom,
+        section.product-slider-section .bubupod-bottom,
+        section.bubupod-about-section,
+        section.bubupod-mission-section,
+        section.bubupod-contect-section,
+        section.bubupod-contact-form-section,
+        section.bubupod-faq-section,
+        section.bubupod-return-section,
+        section.bubupod-thanks-section,
+        section.bubupod-choose-section,
+        section.bubupod-grid-section,
+        section.bubupod-love-section .bubupod-top,
+        section.bubupod-cart-detail-section {
+            padding: 20px 0;
+        }
          
     }
 
@@ -1282,9 +1522,9 @@ section.bubupod-cart-detail-section {
             font-size: 14px;
         }
         h1 {
-            font-size: 32px;
+            font-size: 28px;
             span {
-                font-size: 58px !important;
+                font-size: 50px !important;
             }
         }
     }
@@ -1303,9 +1543,9 @@ section.bubupod-cart-detail-section {
         font-weight: 500;
     }
 
-    .bubupod-p {
-        font-size: 14px;
-        font-weight: 500;
+    body .bubupod-p {
+        font-size: 14px !important;
+        font-weight: 500 !important;
     }
 
     section.bubupod-premium-section {
@@ -1335,19 +1575,37 @@ section.bubupod-cart-detail-section {
        h3 {
             font-size: 14px;
         }
+
+        .flex-md-row img {
+            width: 25px;
+        }
     }
 
-    .bubupod-product-section .bubupod-product-details {
-        padding: 40px 0 0;
-        margin-top: 50px;
-
-        .bubupod-offer {
-            font-size: 12px;
-
-            span {
-                font-size: 8px;
-            }
+    section.bubupod-about-section {
+        .bubupod-text {
+            top: 30px;
+            left: 30px;
+            max-width: calc(100% - 60px);
         }
+
+    }
+
+    section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button {
+        font-size: 18px;
+    }
+
+    section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-body {
+        font-size: 14px;
+    }
+
+    section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button:not(.collapsed)::after {
+        width: 22px;
+        height: 22px;
+    }
+
+    section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button::after {
+        width: 22px;
+        height: 22px;
     }
 
         
@@ -1355,5 +1613,11 @@ section.bubupod-cart-detail-section {
 
 
 @media (max-width: 575.98px) { 
-    /* Styles for extra small devices */ 
+    section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-header button {
+        font-size: 14px;
+    }
+
+    section.bubupod-faq-section .bubupod-accordion .accordion-item .accordion-body {
+        font-size: 12px;
+    }
 }
